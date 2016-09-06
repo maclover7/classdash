@@ -1,0 +1,7 @@
+<h1>ClassDash</h1>
+
+<% if current_user %>
+  <h2>Welcome back, <%= current_user['first_name'] %>!</h2>
+<% else %>
+  <h2><a href="/auth/google_oauth2">Login with Google</a></h2>
+<% end %>
